@@ -5,8 +5,7 @@ In the short URL generation part, the API takes in a POST request with the origi
 
 The generated URL and the original URL are stored in the database.
 When a user visits the shortened URL, the shortened URL is searched in the database. The user is redirected to the original URL if the URL is found. Also, the number of clicks on the URL increases by `1` in the database. Otherwise, it returns an error:
-![[Pasted image 20240620231937.png|500]]
-The above flowchart explains how the application works in a very straightforward manner. The first flowchart explains the shortened URL generation part, and the second flowchart describes what happens when a user visits the shortened URL.
+
 
 ### Planning the URL Shortener build process in Node.js - 
 Let’s first plan out the building process. As aforementioned, for each URL passed into our API, we will generate a unique ID and create a short URL with it. Then, the long URL, short URL, a variable click with the value of `0`, and unique ID will be stored in the database.
