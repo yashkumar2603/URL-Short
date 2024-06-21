@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 dotenv.config({ path: './config/.env' });
 
 const app = express();
+import cors from 'cors';
+app.use(cors());
 
 connectDB();
 
