@@ -1,3 +1,5 @@
+##### For the API Reference and how to use it, see the last section of this 
+
 ### Basic Working - 
 The basic workings of a URL shortener is straightforward. 
 I will be making a REST API(Representational State Transfer API) for the shortening part, then  make the frontend for the final usable web app. 
